@@ -3,18 +3,18 @@ import React from 'react'
 
 const Focus = () => {
   return (
-    <div className='flex flex-col gap-16 p-16 m-8'>
-        <div className='flex flex-col items-center gap-4'>
-            <h1 className='text-4xl font-bold text-[#ef6c00] mb-2'>Our Key Areas of Focus</h1>
-            <h3 className='text-lg font-bold text-[#5eb8b2] mb-2'>Pharmaceutical Marketing</h3>
-            <p className='text-gray-600 text-md'>Strategic promotion of products to healthcare providers and consumers. Tailored campaigns, market analysis, and ethical practices to drive brand awareness and market penetration.</p>
+    <div className='flex flex-col gap-12 px-4 sm:px-6 lg:px-16 py-12'>
+        <div className='flex flex-col items-center text-center gap-4 max-w-3xl mx-auto'>
+            <h1 className='text-3xl sm:text-4xl font-bold text-[#ef6c00]'>Our Key Areas of Focus</h1>
+            <h3 className='text-md sm:text-lg font-bold text-[#5eb8b2] '>Pharmaceutical Marketing</h3>
+            <p className='text-gray-600 text-sm sm:text-base'>Strategic promotion of products to healthcare providers and consumers. Tailored campaigns, market analysis, and ethical practices to drive brand awareness and market penetration.</p>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto'>
             {areas.map((item,index) => (
-                <div className='flex flex-col items-center'>
+                <div key={index} className='flex flex-col items-center text-center bg-white p-6'>
                     <img src={item.pic} alt='image' className='w-16'/>
                     <h3 className="text-lg font-bold text-[#ef6c00] mb-2">{item.main}</h3>
-                    <p className="text-gray-600 text-md">{item.desc}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed break-words">{item.desc}</p>
                 </div>
             ))}
         </div>
