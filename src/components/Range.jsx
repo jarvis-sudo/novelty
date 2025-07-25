@@ -35,7 +35,7 @@ const Range = () => {
     {products.map((item,index) => {
         const isActive = activeIndex === index;
     return(
-        <div key={index} className='flex flex-col gap-4 items-center'>
+        <div key={index} className='flex flex-col gap-4 items-center text-center'>
             <button 
             onClick={() => setActiveIndex(index)}
             className={`

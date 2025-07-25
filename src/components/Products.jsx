@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { products } from "@/data";
 
 // Sample ProductCard component
 const ProductCard = ({ product, index, className = "" }) => {
+  const [isTapped,setIsTapped] = useState(false);
+  
   return (
     <div className={`${product.bgColor} rounded-2xl p-8 h-full ${className}`}>
       <div>
@@ -12,11 +14,20 @@ const ProductCard = ({ product, index, className = "" }) => {
           {product.details}
         </div>
       </div>
-      <div>
+      <div className="mt-4 group"
+      onTouchStart={() => setIsTapped(true)}
+      onTouchEnd={() => {
+        setTimeout(() => setIsTapped(false),300);
+      }}
+      >
         <img 
           src={product.icon} 
           alt="image"
-          className={`transition-transform duration-300 hover:-rotate-60 active:-rotate-60 ${product.imgSize}  mt-4`}
+          className={`transition-transform duration-500
+             ${product.imgSize}  mt-4
+             ${isTapped ? "-rotate-60 scale-110" : ""}
+            group-hover:-rotate-60 group-active:-rotate-60
+            `}
         />
       </div>
     </div>
@@ -30,7 +41,7 @@ const Products = () => {
   return (
     <div className="min-h-screen p-6">
       <div className="text-center mb-12">
-        <h1 className="text-5xl md:text-6xl font-bold text-green-800 mb-4">
+        <h1 className="text-5xl md:text-6xl font-bold text-[#ef6c00] mb-4">
           Our Products
         </h1>
       </div>
@@ -51,7 +62,7 @@ const Products = () => {
 
       
       <div className="hidden">
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 max-w-7xl mx-auto min-h-[600px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:col-start-1 lg:row-start-1 lg:row-span-2">
             <ProductCard product={products[0]} index={0} />
           </div>
