@@ -1,6 +1,6 @@
 import Intro from '@/components/aboutUs/Intro'
 import Journey from '@/components/aboutUs/Journey'
-import Portfolio from '@/components/aboutUs/portfolio'
+import Portfolio from '@/components/aboutUs/Portfolio'
 import Quality from '@/components/aboutUs/Quality'
 import Vision from '@/components/aboutUs/Vision'
 import Footer from '@/components/Footer'
