@@ -21,7 +21,6 @@ const Home = () => {
     <Range/>
     <Products/>
     <Positives/>
-    
     <Contact/>
     <Footer/>
     </>
