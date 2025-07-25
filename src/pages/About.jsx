@@ -5,7 +5,6 @@ import Quality from '@/components/aboutUs/Quality'
 import Vision from '@/components/aboutUs/Vision'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import ProductsPage from '@/components/ProductsPage'
 import React from 'react'
 
 const About = () => {
