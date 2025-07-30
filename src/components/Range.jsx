@@ -27,7 +27,7 @@ const Range = () => {
     ]
   return (
     <div className='flex flex-col items-center min-h-screen justify-center gap-8 md:gap-16 px-4 py-10'>
-        <div className='flex flex-col gap-2 items-center'>
+        <div className='flex flex-col gap-2 items-center text-center'>
             <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Range Wise Products</h3>
             <p className='font-medium text-sm md:text-base text-gray-700 px-4'>Our Premium Quality Pharmaceutical Products for a Healthy World</p>
         </div>
