@@ -20,7 +20,7 @@ function Counter({ target, label, startDelay = 0, trigger }) {
       } else {
         setCount(start);
       }
-    }, 50);
+    }, 20);
   }, startDelay);
 
   return () => clearTimeout(timeout);
@@ -87,7 +87,7 @@ export default function StatsWithParallax() {
       }}
     >
       
-      <div className="absolute inset-0 bg-orange-500 opacity-60"></div>
+      <div className="absolute inset-0 bg-red-700 opacity-60"></div>
 
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-white">
