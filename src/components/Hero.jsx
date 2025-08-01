@@ -21,14 +21,15 @@ useEffect(() => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
 
-   {/*   <div className="w-full h-full absolute inset-0 animate-zoomLoop">
+      <div className="w-full h-full absolute inset-0 animate-zoomLoop">
       <img
         src="/1.jpg"
         alt="Hero"
         className="w-full h-full object-cover transition-transform duration-300 md:hover:scale-200"
       />
       </div>
-*/}
+
+{/*
   <AnimatePresence mode="wait">
 <motion.img
   key={images[index]}
@@ -42,7 +43,7 @@ useEffect(() => {
 />
   </AnimatePresence>
 
-
+*/}
       <div className="absolute inset-0 bg-gradient-to-r from-[#ca4143] via-transparent to-[#5eb8b2] opacity-80 mix-blend-multiply z-10"></div>
 
       <div className="relative z-30 flex flex-col items-start justify-center h-full px-4 sm:px-8 py-10 text-black">

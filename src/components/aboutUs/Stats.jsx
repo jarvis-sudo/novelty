@@ -38,7 +38,7 @@ function Counter({ target, label, startDelay = 0, trigger }) {
 export default function StatsWithParallax() {
   const stats = [
     { target: 16, label: 'Years of Experience' },
-    { target: 22, label: 'States Covered' },
+  
     { target: 3, label: 'Divisions' },
     { target: 1000, label: 'Happy Clients' },
   ];
@@ -80,7 +80,7 @@ export default function StatsWithParallax() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-cover bg-center bg-no-repeat py-20 md:py-32"
+      className="relative bg-cover bg-center bg-[length:180%] sm:bg-[length:140%] md:bg-cover py-16 sm:py-20 md:py-32"
       style={{
         backgroundImage: "url('/pharmacist.jpg')",
         backgroundAttachment: bgAttachment,
@@ -90,7 +90,7 @@ export default function StatsWithParallax() {
       <div className="absolute inset-0 bg-red-700 opacity-60"></div>
 
       
-      <div className="relative z-10 max-w-6xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-white">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-white">
         {stats.map((stat, i) => (
           <Counter key={stat.label} {...stat} startDelay={i * 300} trigger={inView} />
         ))}
