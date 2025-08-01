@@ -139,9 +139,9 @@ export const products = [
   export const categories = [
     'TABLET',
     'CAPSULE',
-    'INJECTIBLES',
-    'OIONTMENTS',
-    'PROTEIN POWDER',
+    'INJECTABLES',
+    'OINTMENTS',
+    'POWDER',
     'SYRUP',
     'LOTION'
   ]
@@ -149,46 +149,87 @@ export const products = [
   export const iproducts = [
     {
       id: 1,
-      name: 'Zinc-500',
-      composition: 'Azithromycin Tablets',
+      name: 'Neurovel-CD3',
+      composition: 'Alpha Lipoic Acid 200mg, Benfotamine 150mg, Inositol 100mg, Chromium Picolinate 200mcg, Pyridoxine Hydrochloride 3mg, Folic Acid 1.5mg. Calcium Carbonate 500mg, Elemental Calcium 200mg, Methylcobalamin 1500mcg, Vitamin-D3 1000 IU Tablets',
       img: '/medicines.png',
       category: 'TABLET'
     },
     {
       id: 2,
-      name: 'Loxicam-P',
-      composition: 'Lornoxicam & Paracetamol Tablets',
+      name: 'Noveclo-SP',
+      composition: 'Aceclofenac 100mg, Paracetamol 325mg & Serratiopeptidase 15mg Tablets',
       img: '/medicines.png',
       category: 'TABLET'
     },
     {
       id: 3,
-      name: 'Amoxicillin-625',
-      composition: 'Amoxicillin & Clavulanate Tablets',
+      name: 'Noveclo-TH4',
+      composition: 'Aceclofenac 100mg & Thiocolchicoside 4 mg Tablets',
       img: '/medicines.png',
       category: 'TABLET'
     },
     {
       id: 4,
-      name: 'Vitamin D3-60K',
-      composition: 'Cholecalciferol Capsules',
+      name: 'BrainveL-C',
+      composition: 'L-Carnosine 100mg Syrup',
       img: '/medicines.png',
-      category: 'CAPSULE'
+      category: 'SYRUP'
     },
     {
       id: 5,
-      name: 'Omeprazole-20',
-      composition: 'Omeprazole Capsules',
+      name: 'Velpro-DHA',
+      composition: 'pregnancy & Lactation Powder',
+      img: '/medicines.png',
+      category: 'POWDER'
+    },
+    {
+      id: 6,
+      name: 'Neurovel-Plus',
+      composition: 'Methylcobalamin 1500mog, Thiamine 100mg Pyridoxine 100mg Niacinamide 10ùng, D Panthenol 50mg, Benz alcohl 2% injection',
+      img: '/medicines.png',
+      category: 'INJECTABLES'
+    },
+    {
+      id: 7,
+      name: 'Novepod-200 DT',
+      composition: 'Cefpodoxime Proxetil 200 mg Disperable Tablets.',
+      img: '/medicines.png',
+      category: 'TABLET'
+    },
+    {
+      id: 8,
+      name: 'Novepan-D',
+      composition: 'Amoxicillin & Clavulanate Tablets',
       img: '/medicines.png',
       category: 'CAPSULE'
     },
     {
-      id: 6,
-      name: 'Insulin-100',
-      composition: 'Human Insulin Injection',
+      id: 9,
+      name: 'Tendokey',
+      composition: 'Rosehip Extract 375mg. Collagen Peptide Type-11 40mg, Glucosamine 750mg, Sodium Hyaluronate 30mg, Chondroitin Sulphate 200mg, Vitamin C 35mg. Vitamin. D3 400 IU Tablets',
+      img: '/medicines.png',
+      category: 'TABLET'
+    },
+    {
+      id: 10,
+      name: 'Novel-XT',
+      composition: 'Amoxicillin & Clavulanate Tablets',
+      img: '/medicines.png',
+      category: 'TABLET'
+    },{
+      id: 11,
+      name: 'Cefnol-LB',
+      composition: 'Amoxicillin & Clavulanate Tablets',
+      img: '/medicines.png',
+      category: 'TABLET'
+    },
+    {
+      id: 12,
+      name: 'Neuropan-IV',
+      composition: 'Pantaprazole Sodium injection B.P. 40mg',
       img: '/medicines.png',
       category: 'INJECTABLES'
-    }
+    },
   ];
 
   export const portfolio = [

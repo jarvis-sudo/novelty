@@ -10,7 +10,7 @@ const Vision = () => {
         <div className='p-10 rounded-2xl maxm-w-5xl mx-auto space-y-10'>
             <div>
                 <h2 className='text-2xl font-bold text-orange-600 mb-4'>Our Vision</h2>
-                <p>We are committed to advancing global healthcare by making high-quality medicines accessible to all. Through continuous innovation, ethical practices, and unwavering dedication to customer satisfaction, Saphal Pharma aims to remain a beacon of trust and excellence in the pharmaceutical industry.</p>
+                <p>We are committed to advancing global healthcare by making high-quality medicines accessible to all. Through continuous innovation, ethical practices, and unwavering dedication to customer satisfaction, Novelty LifeSciences aims to remain a beacon of trust and excellence in the pharmaceutical industry.</p>
             </div>
             <div>
                 <h2 className='text-2xl font-bold text-orange-600 mb-4'>Our Mission</h2>
