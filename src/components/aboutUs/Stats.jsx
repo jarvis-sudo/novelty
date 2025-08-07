@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
 
-function Counter({ target, label, startDelay = 0, trigger }) {
+import React, { useEffect, useRef, useState,useMemo } from 'react';
+
+const Counter = React.memo(function Counter({ target, label, startDelay = 0, trigger })  {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -11,16 +12,17 @@ function Counter({ target, label, startDelay = 0, trigger }) {
 
   const timeout = setTimeout(() => {
     let start = 0;
-    const increment = Math.ceil(target / 100);
-    const timer = setInterval(() => {
+    const increment = Math.max(1,Math.floor(target / 100));
+    const animate = () => {
       start += increment;
       if (start >= target) {
-        clearInterval(timer);
         setCount(target);
       } else {
         setCount(start);
+        requestAnimationFrame(animate);
       }
-    }, 20);
+    };
+    requestAnimationFrame(animate);
   }, startDelay);
 
   return () => clearTimeout(timeout);
@@ -33,15 +35,15 @@ function Counter({ target, label, startDelay = 0, trigger }) {
       <div className="text-sm md:text-base mt-1">{label}</div>
     </div>
   );
-}
+})
 
-export default function StatsWithParallax() {
-  const stats = [
+export default function Stats() {
+  const stats = useMemo(() =>  [
     { target: 16, label: 'Years of Experience' },
   
     { target: 3, label: 'Divisions' },
     { target: 1000, label: 'Happy Clients' },
-  ];
+  ],[]);
 
   const [bgAttachment, setBgAttachment] = useState('scroll');
   const [inView, setInView] = useState(false);
@@ -65,14 +67,14 @@ export default function StatsWithParallax() {
       },
       { threshold: 0.4 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);

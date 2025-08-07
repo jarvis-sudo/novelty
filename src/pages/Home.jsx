@@ -6,10 +6,9 @@ import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Positives from '@/components/Positives'
-import Products from '@/components/Products'
-
 import Range from '@/components/Range'
 import React from 'react'
+import Appointment from '@/components/Appointment'
 
 const Home = () => {
   return (
@@ -17,10 +16,11 @@ const Home = () => {
     <Navbar/>
     <Hero/>
     <About/>
+    
     <Focus/>
     <Range/>
-    
     <Positives/>
+    <Appointment/>
     <Contact/>
     <Footer/>
     </>

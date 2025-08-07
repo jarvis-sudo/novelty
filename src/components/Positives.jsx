@@ -16,8 +16,17 @@ const iconMap = [
 
 const Positives = () => {
   return (
-    <div className="px-6 py-16 flex flex-col lg:flex-row items-center gap-12">
-      <div className="p-6 flex-1 w-full">
+    <div className="relative w-full">
+
+    <div className="absolute inset-0  w-full h-full bg-cover bg-center"
+    style={{backgroundImage : "url('/doodle2.jpg')"}}
+    >
+      <div className="w-full h-full bg-orange-50 opacity-93"></div>
+    </div>
+    
+    <div className="relative z-10 px-4 sm:px-6 py-16 flex flex-col lg:flex-row items-center gap-12" >
+        
+      <div className="flex-1 w-full">
         <div className="text-start max-w-3xl mx-auto mb-12">
           <p className="text-[#ef6c00] text-lg font-semibold mb-2">
             Why Choose Us
@@ -31,7 +40,7 @@ const Positives = () => {
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
           {assurance.map((item, index) => (
-            <div key={index} className="flex gap-4 items-start">
+            <div key={index} className="flex gap-4 items-center">
               <div className="flex-shrink-0">
                 {item.pic ? <img src={item.pic} alt={"alt"}/> : iconMap[index]}
               </div>
@@ -45,9 +54,10 @@ const Positives = () => {
           ))}
         </div>
       </div>
-      <div>
+      <div className="">
         <img src="/d2.png" alt="doctor" className="max-w-xs sm:max-w-md md:max-w-sm w-full h-auto object-contain" />
       </div>
+    </div>
     </div>
   );
 };
