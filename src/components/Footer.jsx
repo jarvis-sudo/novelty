@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='bg-black text-white px-6 py-12 relative overflow-hidden'
+    <footer className='bg-[#111010] text-white px-6 py-12 relative overflow-hidden'
    /* style={{backgroundImage:"url('/footerbg.jpg')",
       backgroundSize: "1600px",
     }}
@@ -29,6 +29,7 @@ const Footer = () => {
           {/* Quick Links section */}
           <div className='pl-8'>
             <h3 className='text-3xl font-bold text-[#ef6c00] mb-6'>Quick Links</h3>
+            <div className="w-12 h-1 bg-orange-500 mb-6"></div>
             <ul className='space-y-3'>
               <li className='flex items-center text-white/95 hover:text-teal-600 cursor-pointer transition-colors'>
                 <span className='text-green-500 mr-2'>▶</span>
@@ -52,6 +53,8 @@ const Footer = () => {
           {/* Contact section */}
           <div className='pl-8'>
             <h3 className='text-3xl font-bold text-[#ef6c00] mb-6'>Contact</h3>
+                        <div className="w-12 h-1 bg-orange-500 mb-6"></div>
+
             <div className='space-y-4'>
               <div className='flex items-start'>
                 <span className='text-green-500 mr-3 mt-1'>📍</span>
@@ -67,7 +70,7 @@ const Footer = () => {
               </div>
               <div className='flex items-center'>
                 <span className='text-green-500 mr-3'>📞</span>
-                <p className='text-white/95'>+91 94993 88888, +91 9700730167</p>
+                <p className='text-white/95'>+91 9999999998, +91 9999999999</p>
               </div>
             </div>
           </div>

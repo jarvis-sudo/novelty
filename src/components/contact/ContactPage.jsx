@@ -24,7 +24,7 @@ export default function Contact() {
         <div className="space-y-8">
           <div>
             <h2 className="text-2xl font-semibold mb-2">Corporate Office</h2>
-            <p>Pxxxxx<br />Industrial Area<br />Telangana 134113</p>
+            <p>Pxxxxx<br />Industrial Area<br />Telangana 507002</p>
           </div>
           <div>
             <h2 className="text-2xl font-semibold mb-2">Factory</h2>
