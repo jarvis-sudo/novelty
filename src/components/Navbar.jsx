@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link
               key={link.label}
               to={link.href}
-              className="text-sm lg:text-xl font-semibold text-[#5eb8b2] hover:text-[#ef6c00] transition-colors duration-200 whitespace-nowrap"
+              className="text-sm lg:text-xl font-normal text-[#5eb8b2] hover:text-[#ef6c00] transition-colors duration-200 whitespace-nowrap"
             >
               {link.label}
             </Link>

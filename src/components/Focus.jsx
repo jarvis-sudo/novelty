@@ -15,9 +15,9 @@ const Focus = () => {
             <div className='w-full h-full bg-blue-50 opacity-96'></div>
         </div>
         <div className='relative z-10'>
-        <div className='flex flex-col items-center text-center gap-4 max-w-3xl mx-auto'>
-            <h1 className='text-3xl sm:text-4xl font-bold text-[#ef6c00]'>Our Key Areas of Focus</h1>
-            <h3 className='text-md sm:text-lg font-bold text-[#5eb8b2] '>Pharmaceutical Marketing</h3>
+        <div className='flex flex-col items-center text-center gap-8 max-w-3xl mx-auto'>
+            <h1 className='text-3xl sm:text-5xl font-semibold text-[#ef6c00]'>Our Key Areas of Focus</h1>
+            <h3 className='text-md sm:text-2xl font-medium text-[#ef6c00] '>Pharmaceutical Marketing</h3>
             <p className='text-gray-600 text-sm sm:text-base'>Strategic promotion of products to healthcare providers and consumers. Tailored campaigns, market analysis, and ethical practices to drive brand awareness and market penetration.</p>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto'>

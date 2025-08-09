@@ -62,7 +62,7 @@ useEffect(() => {
           animation="slideLeft"
           by="character"
           duration={3}
-          className="text-2xl sm:text-3xl font-black text-[#5eb8b2]"
+          className="text-2xl sm:text-3xl font-bold text-[#5eb8b2]"
         >
           Novelty
         </TextAnimate>
@@ -70,7 +70,7 @@ useEffect(() => {
           animation="slideLeft"
           by="character"
           duration={3}
-          className="text-2xl sm:text-3xl font-black text-[#ca4143]"
+          className="text-2xl sm:text-3xl font-bold text-[#ca4143]"
         >
            LifeSciences
         </TextAnimate>
