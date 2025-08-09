@@ -39,39 +39,42 @@ const Footer = () => {
             <div className="w-12 h-1 bg-white mb-6"></div>
             <ul className="space-y-3">
               <li className="flex items-center text-white/95 hover:text-teal-600 cursor-pointer transition-colors">
-             {//   <span className="text-green-500 mr-2">▶</span>
-}
+                {
+                  //   <span className="text-green-500 mr-2">▶</span>
+                }
                 Home
               </li>
               <li className="flex items-center text-white/95 hover:text-teal-600 cursor-pointer transition-colors">
-             {//   <span className="text-green-500 mr-2">▶</span>
-}
+                {
+                  //   <span className="text-green-500 mr-2">▶</span>
+                }
                 About Us
               </li>
               <li className="flex items-center text-white/95 hover:text-teal-600 cursor-pointer transition-colors">
-             {//   <span className="text-green-500 mr-2">▶</span>
-}
+                {
+                  //   <span className="text-green-500 mr-2">▶</span>
+                }
                 Products
               </li>
               <li className="flex items-center text-white/95 hover:text-teal-600 cursor-pointer transition-colors">
-           {//     <span className="text-green-500 mr-2">▶</span>
-  }
-    Contact Us
+                {
+                  //     <span className="text-green-500 mr-2">▶</span>
+                }
+                Contact Us
               </li>
             </ul>
           </div>
 
           {/* Contact section */}
           <div className="pl-8">
-            <h3 className="text-3xl font-medium text-white mb-6">
-              Contact
-            </h3>
+            <h3 className="text-3xl font-medium text-white mb-6">Contact</h3>
             <div className="w-12 h-1 bg-white mb-6"></div>
 
             <div className="space-y-4">
               <div className="flex items-start">
-              {//  <span className="text-green-500 mr-3 mt-1">📍</span>
-}
+                {
+                  //  <span className="text-green-500 mr-3 mt-1">📍</span>
+                }
                 <p className="text-white/95">
                   T Hub Phase 2 Inorbit Mall Road,
                   <br />
@@ -81,45 +84,45 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex items-center">
-             {//   <span className="text-green-500 mr-3">✉️</span>
-}
+                {
+                  //   <span className="text-green-500 mr-3">✉️</span>
+                }
                 <p className="text-white/95">sales@noveltylifesciences.com</p>
               </div>
               <div className="flex items-center">
-              {//  <span className="text-green-500 mr-3">📞</span>
-}
+                {
+                  //  <span className="text-green-500 mr-3">📞</span>
+                }
                 <p className="text-white/95">+91 9999999998, +91 9999999999</p>
               </div>
             </div>
           </div>
         </div>
-        </div>
+      </div>
 
-        <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#2a2a2a]">
-          <div className="px-6 py-8 flex flex-col md:flex-row items-center justify-around gap-6 md:gap-4">
-            <div className="text-xl font-semibold text-white text-center">
-              Sign In and don't miss anything!
-            </div>
-            <div>
-              <form className="flex max-w-full">
-                <input
-                  type="email"
-                  placeholder="Enter your e-mail"
-                  className="flex-1 px-4 py-2 outline-none text-black rounded-l-full bg-white focus:ring-2 focus:ring-red-500"
-                />
-                <button
-                  type="submit"
-                  className="bg-red-600 font-semibold text-white px-6 py-2 rounded-r-full hover:bg-blue-500 transition-colors duration-300"
-                >
-                  SUBSCRIBE
-                </button>
-              </form>
-            </div>
+      <div className="w-full bg-[#2a2a2a]">
+        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
+          <div className="text-lg md:text-xl font-semibold text-white text-center md:text-left">
+            Sign in and don't miss anything!
           </div>
+          <form className="flex w-full sm:max-w-md">
+            <input
+              type="email"
+              placeholder="Enter your e-mail"
+              className="flex-1 px-4 py-2 outline-none text-black rounded-l-full bg-white focus:ring-2 focus:ring-red-500"
+            />
+            <button
+              type="submit"
+              className="bg-red-600 font-semibold text-white px-6 py-2 rounded-r-full hover:bg-blue-500 transition-colors duration-300"
+            >
+              SUBSCRIBE
+            </button>
+          </form>
         </div>
+      </div>
 
-        {/* Bottom section with logo and copyright */}
-        <div className="max-w-7xl mx-auto">
+      {/* Bottom section with logo and copyright */}
+      <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-gray-400">
           <div className="md-2 md:mb-0">
             <img src="/logo.png" alt="logo" height={80} width={120} />
