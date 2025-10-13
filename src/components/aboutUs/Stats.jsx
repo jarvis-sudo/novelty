@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState,useMemo } from 'react';
 const Counter = React.memo(function Counter({ target, label, startDelay = 0, trigger })  {
   const [count, setCount] = useState(0);
 
-  useEffect(() => {
+/*  useEffect(() => {
   if (!trigger) {
     setCount(0); 
     return;
@@ -28,6 +28,29 @@ const Counter = React.memo(function Counter({ target, label, startDelay = 0, tri
   return () => clearTimeout(timeout);
 }, [target, startDelay, trigger]);
 
+*/
+useEffect(() => {
+  if (!trigger) return;
+
+  let start = 0;
+  const increment = Math.max(1, Math.floor(target / 60)); // smoother steps
+  let animationId;
+
+  const animate = () => {
+    start += increment;
+    if (start >= target) {
+      setCount(target);
+      cancelAnimationFrame(animationId);
+    } else {
+      setCount(start);
+      animationId = requestAnimationFrame(animate);
+    }
+  };
+
+  animationId = requestAnimationFrame(animate);
+
+  return () => cancelAnimationFrame(animationId);
+}, [trigger, target]);
 
   return (
     <div className="text-center text-white">
@@ -61,12 +84,20 @@ export default function Stats() {
 
   
   useEffect(() => {
-    const observer = new IntersectionObserver(
+   /* const observer = new IntersectionObserver(
       ([entry]) => {
         setInView(entry.isIntersecting);
       },
       { threshold: 0.4 }
-    );
+    ); */
+
+    const observer = new IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting) setInView(true);
+  },
+  { threshold: 0.6 } // only trigger when 60% visible
+);
+
     const currentRef = sectionRef.current;
     if (currentRef) {
       observer.observe(currentRef);

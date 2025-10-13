@@ -101,7 +101,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full bg-[#2a2a2a]">
-        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
+        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-around gap-6 md:gap-10">
           <div className="text-lg md:text-xl font-semibold text-white text-center md:text-left">
             Sign in and don't miss anything!
           </div>
