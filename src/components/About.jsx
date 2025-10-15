@@ -38,9 +38,9 @@ const About = () => {
         className="w-full max-w-lg lg:max-w-xl flex justify-center"
       >
         <img
-          src="/d5.png"
+          src="/d6.png"
           alt="doctor"
-          className="w-full h-auto max-h-[750px] sm:max-h-[600px] lg:max-h-[750px] xl:max-h-[800px] object-cover"
+          className="w-full h-auto max-h-[900px] sm:max-h-[600px] lg:max-h-[800px] xl:max-h-[800px] object-cover"
         />
       </motion.div>
     </div>
