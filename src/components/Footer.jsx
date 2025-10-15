@@ -252,7 +252,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-0">
         <div className="flex flex-col items-center justify-between gap-6 pt-8 md:flex-row">
           <div className="flex-shrink-0">
-            <img src="/logo.png" alt="logo" height={80} width={120} />
+            <img src="/logo1.png" alt="logo" height={80} width={120} />
           </div>
           <div>
             <p className="text-xs sm:text-sm text-center md:text-right">

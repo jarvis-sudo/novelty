@@ -224,8 +224,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-red-600" />
                 </div>
                 <div>
-                  <a href="mailto:vineet@sblifesciences.in" className="text-gray-800 hover:text-red-600 transition-colors">
-                    vineet@sblifesciences.in
+                  <a href="mailto:sales@noveltylifesciences.om" className="text-gray-800 hover:text-red-600 transition-colors">
+                    sales@noveltylifesciences.com
                   </a>
                 </div>
               </div>

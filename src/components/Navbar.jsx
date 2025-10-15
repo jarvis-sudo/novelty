@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex-shrink-0">
           <img 
-            src="/logo.png" 
+            src="/logo1.png" 
             alt="logo" 
             className="w-20 h-12 sm:w-24 sm:h-14 md:w-28 md:h-16 lg:w-32 lg:h-20 object-contain" 
           />

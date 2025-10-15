@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Imp from '@/components/product/Imp'
 import ProductsPage from '@/components/ProductsPage'
@@ -9,6 +10,7 @@ const Product = () => {
         <Navbar/>
         <Imp/>
         <ProductsPage/>
+        <Footer/>
     </div>
   )
 }
