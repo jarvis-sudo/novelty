@@ -66,17 +66,29 @@ const Counter = ({ target, label, startDelay = 0, trigger }) => {
 
 export default function Stats() {
   const stats = [
-    { target: 16, label: 'Years of Experience' },
-    { target: 3, label: 'Divisions' },
+    { target: 7, label: 'Years of Experience' },
+    { target: 2, label: 'Divisions' },
     { target: 1000, label: 'Happy Clients' },
   ];
 
   const [inView, setInView] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
   const sectionRef = useRef(null);
   const hasTriggered = useRef(false);
 
- 
   useEffect(() => {
+    const checkDesktop = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+    
+    checkDesktop();
+    window.addEventListener('resize', checkDesktop);
+    return () => window.removeEventListener('resize', checkDesktop);
+  }, []);
+
+  useEffect(() => {
+    if (isDesktop) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasTriggered.current) {
@@ -85,7 +97,7 @@ export default function Stats() {
           observer.disconnect();
         }
       },
-      { threshold: 0.3, rootMargin: '50px' } 
+      { threshold: 0.3, rootMargin: '50px' }
     );
 
     const currentRef = sectionRef.current;
@@ -94,7 +106,7 @@ export default function Stats() {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [isDesktop]);
 
   return (
     <section
@@ -105,7 +117,7 @@ export default function Stats() {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundAttachment: 'scroll',
+        backgroundAttachment: isDesktop ? 'fixed' : 'scroll',
       }}
     >
       <div className="absolute inset-0 bg-red-700 opacity-60 pointer-events-none" />
@@ -113,24 +125,26 @@ export default function Stats() {
       <div className="relative z-10 max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
           {stats.map((stat, i) => (
-            <Counter
-              key={stat.label}
-              target={stat.target}
-              label={stat.label}
-              startDelay={i * 200}
-              trigger={inView}
-            />
+            <div key={stat.label} className="text-center text-white">
+              {isDesktop ? (
+                <>
+                  <div className="text-3xl md:text-5xl font-bold tabular-nums">
+                    {stat.target}+
+                  </div>
+                  <div className="text-sm md:text-base mt-1">{stat.label}</div>
+                </>
+              ) : (
+                <Counter
+                  target={stat.target}
+                  label={stat.label}
+                  startDelay={i * 200}
+                  trigger={inView}
+                />
+              )}
+            </div>
           ))}
         </div>
       </div>
-
-      <style>{`
-        @media (min-width: 768px) {
-          section[style*="background"] {
-            background-attachment: fixed !important;
-          }
-        }
-      `}</style>
     </section>
   );
 }
