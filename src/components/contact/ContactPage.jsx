@@ -134,7 +134,7 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-red-600" />
                 </div>
                 <div>
-                  <p className="text-gray-800">+91-999999999</p>
+                  <p className="text-gray-800">+91 7837836626</p>
                 </div>
               </div>
 

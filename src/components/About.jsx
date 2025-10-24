@@ -15,7 +15,7 @@ const About = () => {
       >
         <h1 className="text-4xl font-bold text-[#ef6c00]">About Us</h1>
         <h3 className="text-2xl font-medium">
-          Established in the year 2013, Novelty Lifesciences has attained a top
+          Established in the year 2019, Novelty Lifesciences has attained a top
           reputation in India’s pharmaceutical market for manufacturing and
           trading a quality-assured range of Pharmaceutical Medicines.
         </h3>
