@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="lg:h-screen flex flex-col lg:flex-row justify-center gap-6 items-center lg:gap-16 px-4 sm:px-8 lg:px-12 xl:px-10 py-6 lg:py-8 overflow-hidden max-w-7xl mx-auto">
       <motion.div
@@ -25,7 +27,7 @@ const About = () => {
           guideline of international standards, following the rules of
           appropriate composition of compounds.
         </p>
-        <button className="bg-[#ef6c00] text-white px-6 py-3 rounded-md shadow hover:bg-orange-700 transition duration-300 text-sm sm:text-base font-medium mt-2">
+        <button onClick={() => navigate("/about")} className="bg-[#ef6c00] text-white px-6 py-3 rounded-md shadow hover:bg-orange-700 transition duration-300 text-sm sm:text-base font-medium mt-2">
           Read More !
         </button>
       </motion.div>

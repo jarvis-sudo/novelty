@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Range = () => {
     const [activeIndex,setActiveIndex] = useState(null);
+    const navigate  = useNavigate();
 
     const products = [
         {
@@ -37,7 +39,9 @@ const Range = () => {
     return(
         <div key={index} className='flex flex-col gap-4 items-center text-center'>
             <button 
-            onClick={() => setActiveIndex(index)}
+            onClick={() => {
+            setActiveIndex(index);
+            navigate("/product");}}
             className={`
                 w-48 h-48 sm:w-56 sm:h-56 md:w-48 md:h-48
                 rounded-full border-4 transition-all duration-300 transform 
