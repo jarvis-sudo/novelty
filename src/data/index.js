@@ -199,7 +199,7 @@ export const products = [
     {
       id: 8,
       name: 'Novepan-D',
-      composition: 'Amoxicillin & Clavulanate Tablets',
+      composition: 'Pantaprazole Sodium 40mg & Domperidone 30mg SR Capsules',
       img: '/medicines.png',
       category: 'CAPSULE'
     },
@@ -213,19 +213,19 @@ export const products = [
     {
       id: 10,
       name: 'Novel-XT',
-      composition: 'Amoxicillin & Clavulanate Tablets',
+      composition: 'Ferrous Bis Glycinate 60mg, Zinc Bis Glycinate 15mg, Methylcobalomin 500mcg & Folic Acid 1mg Tablets',
       img: '/medicines.png',
       category: 'TABLET'
     },{
       id: 11,
       name: 'Cefnol-LB',
-      composition: 'Amoxicillin & Clavulanate Tablets',
+      composition: 'Cefixime 200mg & Lactic Acid Bacillus 60 million spores Tablets',
       img: '/medicines.png',
       category: 'TABLET'
     },
     {
       id: 12,
-      name: 'Neuropan-IV',
+      name: 'Novepan-IV',
       composition: 'Pantaprazole Sodium injection B.P. 40mg',
       img: '/medicines.png',
       category: 'INJECTABLES'
