@@ -22,7 +22,7 @@ const Footer = () => {
 
             <p className="text-sm md:text-base text-white/95 leading-relaxed">
               Novelty LifeSciences (est. 2019, Hyderabad) produces niche oral
-              meds via facilities in Telangana and HP. Trusted partner, part of
+              meds via facilities in Telangana, Mumbai and Himachal Pradesh. Trusted partner, part of
               reputed group.
             </p>
           </div>

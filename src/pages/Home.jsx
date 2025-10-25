@@ -9,6 +9,7 @@ import Positives from '@/components/Positives'
 import Range from '@/components/Range'
 import React from 'react'
 import Appointment from '@/components/Appointment'
+import BrochureSection from '@/components/BrochureSection'
 
 const Home = () => {
   return (
@@ -19,6 +20,8 @@ const Home = () => {
     
     <Focus/>
     <Range/>
+       
+
     <Positives/>
     <Appointment/>
     <Footer/>

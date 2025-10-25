@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import WhatsappButton from "./components/WhatsappButton";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+      <WhatsappButton/>
     </Router>
   );
 }

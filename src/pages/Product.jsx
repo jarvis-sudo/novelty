@@ -1,3 +1,4 @@
+import BrochureSection from '@/components/BrochureSection'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Imp from '@/components/product/Imp'
@@ -8,8 +9,10 @@ const Product = () => {
   return (
     <div>
         <Navbar/>
+         
         <Imp/>
         <ProductsPage/>
+        <BrochureSection/>
         <Footer/>
     </div>
   )
